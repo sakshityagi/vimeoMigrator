@@ -1,0 +1,15 @@
+{
+  "name": "vimeoMigrator",
+  "version": "1.0.0",
+  "description": "NodeJS script to migrate existing buildfire vimeo data to new plugin data",
+  "main": "app.js",
+  "keywords": [
+    "buildfire",
+    "vimeo",
+    "plugin"
+  ],
+  "author": "tyagi.sakshi09@gmail.com",
+  "dependencies": {
+    "express": "*"
+  }
+}
