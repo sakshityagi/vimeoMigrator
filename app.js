@@ -1,9 +1,14 @@
 "use strict";
+
+var vimeoData = require("./oldData");
+var VimeoMigrator = require("./converterScript");
+
 var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send("Working");
+  var list = VimeoMigrator.convert(vimeoData);
+  res.send(list);
 });
 
 var server = app.listen(3010, function () {
